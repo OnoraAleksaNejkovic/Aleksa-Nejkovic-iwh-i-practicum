@@ -46,13 +46,34 @@ label, input {
     font-size: inherit;
 }
 
-input[type="text"] {
+input[type="text"], input[type="date"], input[type="number"] {
     padding: .25rem;
+    width:300px !important;
+    height:30px !important;
 }
 
 input[type="submit"] {
     background-color: lightgrey;
-    border: none;
+    border: 1px solid black;
     padding: .375rem 1rem;
     margin-top: 10px;
+    width:300px !important;
+    height:30px !important;
+}
+#parfumeSize{
+    width:300px !important;
+    height:30px !important;
+}
+table, th, td {
+    width:768px;
+    height:80px;
+    text-align:center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color:whitesmoke;
+}
+label{
+    font-size:20px;
 }

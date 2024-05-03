@@ -1,0 +1,33 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+        
+    body
+        .form-wrapper
+            h1(style="text-align:start") Add/Edit Parfume
+            br
+            div
+            form(method = "POST")
+                    label(for="parfumeName") Name 
+                    input(type="text" name="parfumeName" required)
+                    label(for="parfumeBrand") Brand 
+                    input(type="text" name="parfumeBrand" required)
+                    label(for="parfumeSize") Size 
+                    select(id="parfumeSize" name="parfumeSize")
+                        option(value="30") 30ml
+                        option(value="50") 50ml
+                        option(value="100") 100ml
+                    label(for="parfumePrice") Price
+                    input(type="number" name="parfumePrice" required)
+                    label(for="parfumeLaunchDate") Launch Date
+                    input(type="date" name="parfumeLaunchDate" required)
+                    br
+                    input(type="submit" value="Submit")
+                    br
+                    div
+                        a.btn(href="/") Return to the homepage
+     
+    

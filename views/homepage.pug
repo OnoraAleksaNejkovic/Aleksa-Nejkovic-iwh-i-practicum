@@ -1,0 +1,28 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            h1 Parfume list
+            br
+            div 
+                a(href="/update-cobj") Add/Update this table
+            br
+            div
+                table
+                    tr
+                        th Name  
+                        th Brand  
+                        th Size 
+                        th Price
+                        th Launch Date 
+                    each parfume in data 
+                        tr 
+                            td #{parfume.properties.name} 
+                            td #{parfume.properties.brand}
+                            td #{parfume.properties.size}ml 
+                            td #{parfume.properties.price}$
+                            td #{parfume.properties.launch_date}
